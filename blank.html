@@ -1,51 +1,97 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Дизайн студия - Нёрдс</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a>
-          <img src="img/logos/main.svg" width="160" height="65" alt="Логотип компании Нёрдс">
-        </a>
+<html class="page" lang="ru">
 
-        <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн студия - Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
-        <a href="blank.html">Корзина</a>
-      </nav>
-    </header>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
 
-    <main>
-      <h1>Пустая страница</h1>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logos/main.svg" width="160" height="65" alt="Логотип компании Нёрдс">
+      </a>
 
-    </main>
+      <ul class="page-navigation">
+        <li>
+          <a href="blank.html">Студия</a>
+        </li>
+        <li>
+          <a href="blank.html">Клиенты</a>
+        </li>
+        <li>
+          <a href="catalog.html">Магазин</a>
+        </li>
+        <li>
+          <a href="blank.html">Контакты</a>
+        </li>
+      </ul>
 
-    <footer>
-      <section>
-        <h2>Карта</h2>
+      <a class="cart-link" href="blank.html">Корзина</a>
+    </nav>
+  </header>
 
-        <!-- Карта сайта -->
-      </section>
+  <main class="main-content">
+    <h1>Дизайн студия - Нёрдс</h1>
 
-      <section>
-        <h2>Мы в социальных сетях</h2>
+  </main>
 
-        <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
-        </ul>
-      </section>
+  <footer class="main-footer">
+    <section class="main-footer-contacts">
+      <h2>Контакты</h2>
 
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </footer>
-  </body>
+      <!-- Карта сайта -->
+    </section>
+
+    <section class="socials">
+      <h2>Мы в социальных сетях</h2>
+
+      <ul class="socials-list">
+        <li>
+          <a class="socials-link" href="blank.html">Вконтакте</a>
+        </li>
+        <li>
+          <a class="socials-link" href="blank.html">Фейсбук</a>
+        </li>
+        <li>
+          <a class="socials-link" href="blank.html">Инстаграм</a>
+        </li>
+      </ul>
+    </section>
+
+    <q>Давайте дружить, это выгодно!</q>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+
+  <section class="modal feedback-modal">
+    <h2>Напишите нам</h2>
+
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-form-item">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="feedback-form-item">
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" placeholder="email@example.com ">
+      </p>
+      <p class="feedback-form-item">
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="btn" type="submit"></button>
+    </form>
+
+    <button class="feedback-modal-close" type="button">Закрыть окно</button>
+  </section>
+</body>
+
 </html>
